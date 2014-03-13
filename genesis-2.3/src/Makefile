@@ -67,7 +67,7 @@
 # The following variable determines where GENESIS is placed by the
 # "make install" command. Substituting the full path here is preferable
 # to using `pwd`.
-INSTALLDIR	=	/usr/share/genesis-2.3
+# INSTALLDIR	=	/usr/share/genesis-2.3
 
 # If /tmp is not big enough to contain compile-produced object files,
 # choose a different location here.

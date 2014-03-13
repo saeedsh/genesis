@@ -3,16 +3,16 @@
 # management. It will rewrite this value and install it in determined 
 # address
 
-#ifndef DESTDIR
-#	DESTDIR	=	/usr/share/genesis
-#endif
+#DESTDIR ?= /usr/share/genesis-2.3
+
+$(info DESTDIR= $(DESTDIR))
 
 SRC_PATH = src
 
 default: all
 	
 %::
-	@make -C $(SRC_PATH) INSTALLDIR="$(DESTDIR)" $@
+	@make -C $(SRC_PATH) INSTALLDIR="$(DESTDIR)/usr/share/genesis-2.3" $@
 
 distclean:
 	
