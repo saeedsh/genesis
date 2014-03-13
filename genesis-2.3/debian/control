@@ -1,0 +1,22 @@
+Source: genesis
+Section: Science
+Priority: extra
+Maintainer: Saeed Shariati <saeedsh@gnu.org>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+Homepage: http://www.genesis-sim.org/
+
+
+Package: genesis
+Architecture: amd64
+Depends: libc6(>=2.10.1)
+Description: Small description
+ . 
+ GENESIS (short for GEneral NEural SImulation System) is a general purpose
+ simulation platform that was developed to support the simulation of 
+ neural systems ranging from subcellular components and biochemical 
+ reactions to complex models of single neurons, simulations of large networks,
+ and systems-level models. As such, GENESIS, and its version for parallel and
+ networked computers (PGENESIS) was the first broad scale modeling system in
+ computational biology to encourage modelers to develop and share model
+ features and components.
