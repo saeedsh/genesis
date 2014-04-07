@@ -2,6 +2,9 @@ static char rcsid[] = "$Id: sim_main.c,v 1.6 2005/10/16 20:48:35 svitak Exp $";
 
 /*
 ** $Log: sim_main.c,v $
+** Revision 1.7  2014/04/07 01:01:05  saeed
+** Changes in sim_main.c to copy .simrc file into the HOME address in the first execution.
+**
 ** Revision 1.6  2005/10/16 20:48:35  svitak
 ** Changed hard-coded character arrays from 100 to 256 or malloc'd and freed
 ** memory instead. This was only done where directory paths might have easily
