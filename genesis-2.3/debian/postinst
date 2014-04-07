@@ -21,11 +21,6 @@ set -e
 case "$1" in
     configure)
         ln -s -f /usr/share/genesis-2.3/genesis /usr/bin/genesis
-	cp /usr/share/genesis-2.3/startup/.simrc "$HOME/"	
-
-	chown `basename $HOME` "$HOME/.simrc"
-	chgrp `basename $HOME` "$HOME/.simrc"
-
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

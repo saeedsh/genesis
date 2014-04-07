@@ -6,17 +6,43 @@ Build-Depends: debhelper (>= 7)
 Standards-Version: 3.8.3
 Homepage: http://www.genesis-sim.org/
 
-
 Package: genesis
 Architecture: amd64
 Depends: libc6(>=2.10.1)
-Description: Small description
+Description: This is an Ubuntu Linux package containing the GENESIS 2.3 neural simulator distribution and compiled binaries.
  . 
- GENESIS (short for GEneral NEural SImulation System) is a general purpose
- simulation platform that was developed to support the simulation of 
- neural systems ranging from subcellular components and biochemical 
- reactions to complex models of single neurons, simulations of large networks,
- and systems-level models. As such, GENESIS, and its version for parallel and
- networked computers (PGENESIS) was the first broad scale modeling system in
- computational biology to encourage modelers to develop and share model
- features and components.
+ GENESIS (the GEneral NEural SImulation System) is a general purpose
+ software platform that was developed to support the biologically
+ realistic simulation of neural systems, ranging from subcellular
+ components and biochemical reactions to complex models of single
+ neurons, simulations of large networks, and systems-level models. The
+ object-oriented approach taken by GENESIS and its high-level
+ simulation language allows modelers to easily extend the capabilities
+ of the simulator, and to exchange, modify, and reuse models or model
+ components.
+ . 
+ GENESIS and its graphical front-end XODUS are written in C.  The
+ current release (GENESIS 2.3I is known to run and compile under most
+ UNIX-based systems, inclding Linux, with the X Window System, as well
+ as Mac OSX and Windows with Cygwin.
+ .
+ A detailed guide to the GENESIS neuroscience tutorials and the construction
+ of GENESIS simulations is given in:
+ .
+ The Book of GENESIS: Exploring Realistic Neural Models with the GEneral
+ NEural SImulation System, Second Edition, by James M. Bower and David
+ Beeman, Springer-Verlag (1998).  The free Internet Edition is available
+ at http://genesis-sim.org/GENESIS/bog/bog.html
+ .
+ and
+ .
+ The "Ultimate GENESIS Tutorial Distribution" at
+ http://genesis-sim.org/GENESIS/UGTD.html.  This package serves as both
+ a distribution of GENESIS 2.3 and a self-paced course on biologically
+ realistic modeling in general, and creating simulations with GENESIS
+ in particular. It contains many example cell and network simulations
+ that can be modified and used as starting points for new simulation
+ projects.
+ .
+ More information about GENESIS may be obtained from the main GENESIS
+ web site: http://genesis-sim.org.
