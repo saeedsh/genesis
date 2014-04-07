@@ -34,9 +34,9 @@ sed 's/%@/@@/; s/@%/@@/; s/%g$/@g/; /@g$/s/[\\&%]/\\&/g;
  s/@@/%@/; s/@@/@%/; s/@g$/%g/' > conftest.subs <<\CEOF
 /^[ 	]*VPATH[ 	]*=[^:]*$/d
 
-s%@CFLAGS@%-O0 -D__NO_MATH_INLINES -DLONGWORDS -g -Dnetcdf -DFMT1 -DINCSPRNG%g
-s%@CPPFLAGS@%-DNDEBUG%g
-s%@CXXFLAGS@%%g
+s%@CFLAGS@%-O3 -D__NO_MATH_INLINES -DLONGWORDS -Dnetcdf -DFMT1 -DINCSPRNG%g
+s%@CPPFLAGS@%-D_FORTIFY_SOURCE=2%g
+s%@CXXFLAGS@%-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security%g
 s%@DEFS@%-DHAVE_CONFIG_H%g
 s%@LDFLAGS@%-L/usr/lib%g
 s%@LIBS@%-lfl -lm%g
@@ -60,7 +60,7 @@ s%@CC@%cc%g
 s%@CC_MAKEDEPEND@%false%g
 s%@CXX@%%g
 s%@FC@%%g
-s%@FFLAGS@%-O%g
+s%@FFLAGS@%-g -O2%g
 s%@FLIBS@% %g
 s%@CPP@%cpp -P%g
 s%@FPP@%cpp -P%g

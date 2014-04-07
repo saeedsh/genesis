@@ -21,7 +21,7 @@ MANDIR		= $(prefix)/man
 M4		= m4
 M4FLAGS		= -B10000
 CPP		= cpp -P
-CPPFLAGS	= $(INCLUDES) $(DEFINES) -DNDEBUG
+CPPFLAGS	= $(INCLUDES) $(DEFINES) -D_FORTIFY_SOURCE=2
 FPP		= cpp -P
 FPPFLAGS	= 
 CXXCPPFLAGS	= $(CPPFLAGS)
@@ -31,9 +31,9 @@ CXXCPPFLAGS	= $(CPPFLAGS)
 CC		= cc
 CXX		= 
 FC		= 
-CFLAGS		= -O0 -D__NO_MATH_INLINES -DLONGWORDS -g -Dnetcdf -DFMT1 -DINCSPRNG
-CXXFLAGS	= $(CFLAGS) 
-FFLAGS		= -O
+CFLAGS		= -O3 -D__NO_MATH_INLINES -DLONGWORDS -Dnetcdf -DFMT1 -DINCSPRNG
+CXXFLAGS	= $(CFLAGS) -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security
+FFLAGS		= -g -O2
 CC_MAKEDEPEND	= false
 COMPILE.c	= $(CC) -c $(CFLAGS) $(CPPFLAGS)
 COMPILE.cxx	= $(CXX) -c $(CXXFLAGS) $(CXXCPPFLAGS)
