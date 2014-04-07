@@ -340,11 +340,40 @@ char simrc_name[256];
 	    }
 	}
 	if(pfile == NULL){
-	    fprintf(stderr, "Cannot find a simrc file in the execdir/working or\n");
+		/*
+		** If the .simrc file is not available, try to copy it from the 
+		** application folder into the home address. It's useful for 
+		** installation in debian packages
+		*/
+#ifdef SYSV
+		// Find the
+	    char simrcStartupAddress[128];
+	    ssize_t len = readlink("/proc/self/exe", simrcStartupAddress, sizeof(simrcStartupAddress));
+	    simrcStartupAddress[len] = '\0';
+
+	    char * pch=strrchr(simrcStartupAddress,'/');
+	    sprintf(pch, "/startup/.simrc");
+
+	    if( access( simrcStartupAddress, F_OK ) != -1 ) {
+	    	char *cmd[128+80];
+	    	sprintf( cmd, "/bin/cp \'%s\' \'%s\/'", simrcStartupAddress, home);
+   		    if (system( cmd))
+   		    {
+   		    	fprintf(stderr, "The .simrc file in the startup/.simrc directory\n");
+				fprintf(stderr, "is not accessible. Copy one from startup/.simrc\n");
+				fprintf(stderr, "in the GENESIS installation directory and try\n");
+				fprintf(stderr, "again or see the README in the same location.\n");
+   		    }
+	    } else {
+#endif
+		fprintf(stderr, "Cannot find a simrc file in the execdir/working or\n");
 	    fprintf(stderr, "home directories.  Copy one from startup/.simrc\n");
 	    fprintf(stderr, "in the GENESIS installation directory and try\n");
 	    fprintf(stderr, "again or see the README in the same location.\n");
 	    return(1);
+#ifdef SYSV
+	    }
+#endif
 	}
     }
 
