@@ -9,7 +9,7 @@ SHELL		= /bin/sh
 
 
 # Installation Directories:
-prefix		= /home/saeed/tmp/genesis/genesis-2.3/src/diskio/interface/netcdf/netcdf-3.4
+prefix		= /home/saeed/tmp/test/genesis/genesis-2.3/src/diskio/interface/netcdf/netcdf-3.4
 exec_prefix	= $(prefix)
 INCDIR		= $(exec_prefix)/include
 LIBDIR		= $(exec_prefix)/lib
@@ -21,7 +21,7 @@ MANDIR		= $(prefix)/man
 M4		= m4
 M4FLAGS		= -B10000
 CPP		= cpp -P
-CPPFLAGS	= $(INCLUDES) $(DEFINES) -DNDEBUG
+CPPFLAGS	= $(INCLUDES) $(DEFINES) -D_FORTIFY_SOURCE=2
 FPP		= cpp -P
 FPPFLAGS	= 
 CXXCPPFLAGS	= $(CPPFLAGS)
@@ -32,8 +32,8 @@ CC		= cc
 CXX		= 
 FC		= 
 CFLAGS		= -O3 -D__NO_MATH_INLINES -DLONGWORDS -Dnetcdf -DFMT1 -DINCSPRNG
-CXXFLAGS	= $(CFLAGS) 
-FFLAGS		= -O
+CXXFLAGS	= $(CFLAGS) -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security
+FFLAGS		= -g -O2
 CC_MAKEDEPEND	= false
 COMPILE.c	= $(CC) -c $(CFLAGS) $(CPPFLAGS)
 COMPILE.cxx	= $(CXX) -c $(CXXFLAGS) $(CXXCPPFLAGS)

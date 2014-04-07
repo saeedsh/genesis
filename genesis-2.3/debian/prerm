@@ -29,10 +29,6 @@ case "$1" in
         then
             rm -R $pydistpkg_dir/usr/share/genesis-2.3
         fi
-        if [ -f $HOME/.simrc ];
-        then
-            rm $HOME/.simrc
-        fi
     ;;
 
     failed-upgrade)

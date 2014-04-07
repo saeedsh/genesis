@@ -16,3 +16,5 @@
 *.exe
 *.out
 *.app
+
+genesis-2.3/debian/genesis/*
