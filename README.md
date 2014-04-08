@@ -1,4 +1,4 @@
 genesis
 =======
 
-This project is an effort to create Ubuntu packages for the Genesis source code. The source code is related to Genesis 2.3+.
+This project provides Debian installation package for Genesis (http://www.genesis-sim.org/). 
