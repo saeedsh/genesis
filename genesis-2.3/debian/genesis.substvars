@@ -1,2 +1,2 @@
-shlibs:Depends=libc6 (>= 2.14), libtinfo5, libx11-6, libxt6
+shlibs:Depends=libc6 (>= 2.11), libtinfo5, libx11-6, libxt6
 misc:Depends=

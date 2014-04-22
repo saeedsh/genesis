@@ -2,7 +2,7 @@
 # Generated automatically by configure.
 # Run this file to recreate the current configuration.
 # This directory was configured as follows,
-# on host Hive1204:
+# on host ubuntu-VirtualBox:
 #
 # ./configure 
 #
@@ -41,7 +41,7 @@ s%@DEFS@%-DHAVE_CONFIG_H%g
 s%@LDFLAGS@%-L/usr/lib%g
 s%@LIBS@%-lfl -lm%g
 s%@exec_prefix@%${prefix}%g
-s%@prefix@%/home/saeed/tmp/genesis/genesis-2.3/src/diskio/interface/netcdf/netcdf-3.4%g
+s%@prefix@%/home/ubuntu/tmp/genesis/genesis-2.3/src/diskio/interface/netcdf/netcdf-3.4%g
 s%@program_transform_name@%s,x,x,%g
 s%@bindir@%${exec_prefix}/bin%g
 s%@sbindir@%${exec_prefix}/sbin%g
@@ -195,27 +195,27 @@ CEOF
   mv conftest.out conftest.in
 
   cat > conftest.frag <<CEOF
-${ac_dA}SIZEOF_LONG${ac_dB}SIZEOF_LONG${ac_dC}8${ac_dD}
-${ac_uA}SIZEOF_LONG${ac_uB}SIZEOF_LONG${ac_uC}8${ac_uD}
-${ac_eA}SIZEOF_LONG${ac_eB}SIZEOF_LONG${ac_eC}8${ac_eD}
+${ac_dA}SIZEOF_LONG${ac_dB}SIZEOF_LONG${ac_dC}4${ac_dD}
+${ac_uA}SIZEOF_LONG${ac_uB}SIZEOF_LONG${ac_uC}4${ac_uD}
+${ac_eA}SIZEOF_LONG${ac_eB}SIZEOF_LONG${ac_eC}4${ac_eD}
 ${ac_dA}SIZEOF_FLOAT${ac_dB}SIZEOF_FLOAT${ac_dC}4${ac_dD}
 ${ac_uA}SIZEOF_FLOAT${ac_uB}SIZEOF_FLOAT${ac_uC}4${ac_uD}
 ${ac_eA}SIZEOF_FLOAT${ac_eB}SIZEOF_FLOAT${ac_eC}4${ac_eD}
 ${ac_dA}SIZEOF_DOUBLE${ac_dB}SIZEOF_DOUBLE${ac_dC}8${ac_dD}
 ${ac_uA}SIZEOF_DOUBLE${ac_uB}SIZEOF_DOUBLE${ac_uC}8${ac_uD}
 ${ac_eA}SIZEOF_DOUBLE${ac_eB}SIZEOF_DOUBLE${ac_eC}8${ac_eD}
-${ac_dA}SIZEOF_OFF_T${ac_dB}SIZEOF_OFF_T${ac_dC}8${ac_dD}
-${ac_uA}SIZEOF_OFF_T${ac_uB}SIZEOF_OFF_T${ac_uC}8${ac_uD}
-${ac_eA}SIZEOF_OFF_T${ac_eB}SIZEOF_OFF_T${ac_eC}8${ac_eD}
+${ac_dA}SIZEOF_OFF_T${ac_dB}SIZEOF_OFF_T${ac_dC}4${ac_dD}
+${ac_uA}SIZEOF_OFF_T${ac_uB}SIZEOF_OFF_T${ac_uC}4${ac_uD}
+${ac_eA}SIZEOF_OFF_T${ac_eB}SIZEOF_OFF_T${ac_eC}4${ac_eD}
 CEOF
   sed -f conftest.frag conftest.in > conftest.out
   rm -f conftest.in
   mv conftest.out conftest.in
 
   cat > conftest.frag <<CEOF
-${ac_dA}SIZEOF_SIZE_T${ac_dB}SIZEOF_SIZE_T${ac_dC}8${ac_dD}
-${ac_uA}SIZEOF_SIZE_T${ac_uB}SIZEOF_SIZE_T${ac_uC}8${ac_uD}
-${ac_eA}SIZEOF_SIZE_T${ac_eB}SIZEOF_SIZE_T${ac_eC}8${ac_eD}
+${ac_dA}SIZEOF_SIZE_T${ac_dB}SIZEOF_SIZE_T${ac_dC}4${ac_dD}
+${ac_uA}SIZEOF_SIZE_T${ac_uB}SIZEOF_SIZE_T${ac_uC}4${ac_uD}
+${ac_eA}SIZEOF_SIZE_T${ac_eB}SIZEOF_SIZE_T${ac_eC}4${ac_eD}
 CEOF
   sed -f conftest.frag conftest.in > conftest.out
   rm -f conftest.in
@@ -310,27 +310,27 @@ CEOF
   mv conftest.out conftest.in
 
   cat > conftest.frag <<CEOF
-${ac_dA}SIZEOF_LONG${ac_dB}SIZEOF_LONG${ac_dC}8${ac_dD}
-${ac_uA}SIZEOF_LONG${ac_uB}SIZEOF_LONG${ac_uC}8${ac_uD}
-${ac_eA}SIZEOF_LONG${ac_eB}SIZEOF_LONG${ac_eC}8${ac_eD}
+${ac_dA}SIZEOF_LONG${ac_dB}SIZEOF_LONG${ac_dC}4${ac_dD}
+${ac_uA}SIZEOF_LONG${ac_uB}SIZEOF_LONG${ac_uC}4${ac_uD}
+${ac_eA}SIZEOF_LONG${ac_eB}SIZEOF_LONG${ac_eC}4${ac_eD}
 ${ac_dA}SIZEOF_FLOAT${ac_dB}SIZEOF_FLOAT${ac_dC}4${ac_dD}
 ${ac_uA}SIZEOF_FLOAT${ac_uB}SIZEOF_FLOAT${ac_uC}4${ac_uD}
 ${ac_eA}SIZEOF_FLOAT${ac_eB}SIZEOF_FLOAT${ac_eC}4${ac_eD}
 ${ac_dA}SIZEOF_DOUBLE${ac_dB}SIZEOF_DOUBLE${ac_dC}8${ac_dD}
 ${ac_uA}SIZEOF_DOUBLE${ac_uB}SIZEOF_DOUBLE${ac_uC}8${ac_uD}
 ${ac_eA}SIZEOF_DOUBLE${ac_eB}SIZEOF_DOUBLE${ac_eC}8${ac_eD}
-${ac_dA}SIZEOF_OFF_T${ac_dB}SIZEOF_OFF_T${ac_dC}8${ac_dD}
-${ac_uA}SIZEOF_OFF_T${ac_uB}SIZEOF_OFF_T${ac_uC}8${ac_uD}
-${ac_eA}SIZEOF_OFF_T${ac_eB}SIZEOF_OFF_T${ac_eC}8${ac_eD}
+${ac_dA}SIZEOF_OFF_T${ac_dB}SIZEOF_OFF_T${ac_dC}4${ac_dD}
+${ac_uA}SIZEOF_OFF_T${ac_uB}SIZEOF_OFF_T${ac_uC}4${ac_uD}
+${ac_eA}SIZEOF_OFF_T${ac_eB}SIZEOF_OFF_T${ac_eC}4${ac_eD}
 CEOF
   sed -f conftest.frag conftest.in > conftest.out
   rm -f conftest.in
   mv conftest.out conftest.in
 
   cat > conftest.frag <<CEOF
-${ac_dA}SIZEOF_SIZE_T${ac_dB}SIZEOF_SIZE_T${ac_dC}8${ac_dD}
-${ac_uA}SIZEOF_SIZE_T${ac_uB}SIZEOF_SIZE_T${ac_uC}8${ac_uD}
-${ac_eA}SIZEOF_SIZE_T${ac_eB}SIZEOF_SIZE_T${ac_eC}8${ac_eD}
+${ac_dA}SIZEOF_SIZE_T${ac_dB}SIZEOF_SIZE_T${ac_dC}4${ac_dD}
+${ac_uA}SIZEOF_SIZE_T${ac_uB}SIZEOF_SIZE_T${ac_uC}4${ac_uD}
+${ac_eA}SIZEOF_SIZE_T${ac_eB}SIZEOF_SIZE_T${ac_eC}4${ac_eD}
 s%^[ 	]*#[ 	]*undef[ 	][ 	]*[a-zA-Z_][a-zA-Z_0-9]*%/* & */%
 CEOF
   sed -f conftest.frag conftest.in > conftest.out
