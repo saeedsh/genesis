@@ -1,0 +1,22 @@
+Format: 1.8
+Date: Thu, 13 Mar 2014 12:28:57 -0300
+Source: genesis
+Binary: genesis
+Architecture: i386
+Version: 2.3-1
+Distribution: unstable
+Urgency: low
+Maintainer: Saeed Shariati <saeedsh@gnu.org>
+Changed-By: Saeed Shariati <saeedsh@gnu.org>
+Description: 
+ genesis    - This is an Ubuntu Linux package containing the GENESIS 2.3 neural
+Changes: 
+ genesis (2.3-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1: 
+ b4565488e9308c9f67c2669daea494d45b5ba37b 10814196 genesis_2.3-1_i386.deb
+Checksums-Sha256: 
+ 6f8dd71bf5126c8bffbffbe1e468a9103f0ccb3e4dfb021ee16b17eab1945f84 10814196 genesis_2.3-1_i386.deb
+Files: 
+ 2a38cd22d3a7efe2434b19ea19a91bca 10814196 Science extra genesis_2.3-1_i386.deb
