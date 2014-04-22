@@ -9,7 +9,7 @@ SHELL		= /bin/sh
 
 
 # Installation Directories:
-prefix		= /src/saeed/workspace/genesis/genesis-2.3/src/diskio/interface/netcdf/netcdf-3.4
+prefix		= /home/saeed/tmp/genesis/genesis-2.3/src/diskio/interface/netcdf/netcdf-3.4
 exec_prefix	= $(prefix)
 INCDIR		= $(exec_prefix)/include
 LIBDIR		= $(exec_prefix)/lib

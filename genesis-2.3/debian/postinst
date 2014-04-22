@@ -21,6 +21,10 @@ set -e
 case "$1" in
     configure)
         ln -s -f /usr/share/genesis-2.3/genesis /usr/bin/genesis
+	if [ -f $HOME/.simrc ];
+	then
+		rm $HOME/.simrc
+	fi
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
